@@ -11,7 +11,8 @@ function App() {
     .then(()=>{
       alert("success")
     })
-    .catch(()=>{
+    .catch((err)=>{
+      console.log(err)
       alert("fail")
     })
   }
