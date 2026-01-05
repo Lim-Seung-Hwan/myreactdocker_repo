@@ -6,6 +6,17 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const testNodeConn = () =>{
+    fetch('/api/')
+    .then((res)=>res.json())
+    .then(()=>{
+      alert("success")
+    })
+    .catch(()=>{
+      alert("fail")
+    })
+  }
+
   return (
     <>
       <div>
