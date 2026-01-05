@@ -8,7 +8,6 @@ function App() {
 
   const testNodeConn = () =>{
     fetch('/api/')
-    .then((res)=>res.json())
     .then(()=>{
       alert("success")
     })
