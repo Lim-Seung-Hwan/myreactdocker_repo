@@ -6,6 +6,16 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const connNode = () =>{
+    fetch('http://10.0.20.6:3001')
+    .then(()=>{
+      alert("success")
+    })
+    .catch(()=>{
+      alert("fail")
+    })
+  }
+
   return (
     <>
       <div>
@@ -18,8 +28,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={connNode}>
+          React-Node-NaverCloud
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
