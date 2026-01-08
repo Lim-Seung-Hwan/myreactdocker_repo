@@ -8,7 +8,7 @@ function App() {
 
 
   const connNode = () =>{
-    fetch('http://10.0.20.6:3001')
+    fetch('/api')
     .then(()=>{
       alert("success")
     })
@@ -32,8 +32,6 @@ function App() {
 
         <button onClick={connNode}>
           React-Node-NaverCloud
-
-        
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
